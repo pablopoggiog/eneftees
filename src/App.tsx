@@ -1,3 +1,4 @@
+import { Button } from "src/components";
 import {
   TWITTER_HANDLE,
   TWITTER_LINK,
@@ -11,12 +12,12 @@ const App = () => {
   const { currentAccount, connectWallet, askContractToMintNft } = useContract();
 
   const renderNotConnectedContainer = () => (
-    <button
+    <Button
       onClick={connectWallet}
       className="cta-button connect-wallet-button"
     >
       Connect to Wallet
-    </button>
+    </Button>
   );
 
   const renderMintUI = () => (
