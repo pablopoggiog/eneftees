@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { ethers } from "ethers";
-import myEpicNft from "src/utils/MyEneftee.json";
+import myEneftee from "src/utils/MyEneftee.json";
 import { CONTRACT_ADDRESS } from "src/constants";
 
 export const useContract = () => {
@@ -72,7 +72,7 @@ export const useContract = () => {
         const signer = provider.getSigner();
         const connectedContract = new ethers.Contract(
           CONTRACT_ADDRESS,
-          myEpicNft.abi,
+          myEneftee.abi,
           signer
         );
 
@@ -110,7 +110,7 @@ export const useContract = () => {
         const signer = provider.getSigner();
         const connectedContract = new ethers.Contract(
           CONTRACT_ADDRESS,
-          myEpicNft.abi,
+          myEneftee.abi,
           signer
         );
 
