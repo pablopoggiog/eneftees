@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/eneftees/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/eneftees/static/js/main.481a7ce9.chunk.js",
+    "main.js.map": "/eneftees/static/js/main.481a7ce9.chunk.js.map",
+    "runtime-main.js": "/eneftees/static/js/runtime-main.ca62da95.js",
+    "runtime-main.js.map": "/eneftees/static/js/runtime-main.ca62da95.js.map",
+    "static/js/2.27aca2c0.chunk.js": "/eneftees/static/js/2.27aca2c0.chunk.js",
+    "static/js/2.27aca2c0.chunk.js.map": "/eneftees/static/js/2.27aca2c0.chunk.js.map",
+    "static/js/3.be55af77.chunk.js": "/eneftees/static/js/3.be55af77.chunk.js",
+    "static/js/3.be55af77.chunk.js.map": "/eneftees/static/js/3.be55af77.chunk.js.map",
+    "index.html": "/eneftees/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/eneftees/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.27aca2c0.chunk.js.LICENSE.txt": "/eneftees/static/js/2.27aca2c0.chunk.js.LICENSE.txt",
+    "static/media/twitter-logo.a8a75254.svg": "/eneftees/static/media/twitter-logo.a8a75254.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca62da95.js",
+    "static/js/2.27aca2c0.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.481a7ce9.chunk.js"
+  ]
+}
