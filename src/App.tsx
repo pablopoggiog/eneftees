@@ -23,7 +23,7 @@ const App = () => {
       <Button
         onClick={!currentAccount ? () => connectWallet() : askContractToMintNft}
       >
-        {!currentAccount ? "Connect to Wallet" : "Mint NFT"}
+        {!currentAccount ? "Connect Wallet" : "Mint NFT"}
       </Button>
       {isMining && <Spinner />}
       <Link href={OPENSEA_LINK} target="_blank" rel="noreferrer">
