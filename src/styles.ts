@@ -20,9 +20,9 @@ export const Title = styled.h1``;
 
 export const Text = styled.p``;
 
-export const Footer = styled.div``;
-
-export const Logo = styled.img``;
+export const Image = styled.img`
+  border-radius: 5px;
+`;
 
 export const Link = styled.a`
   color: white;
