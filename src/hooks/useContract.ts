@@ -77,7 +77,6 @@ export const useContract = () => {
           signer
         );
 
-        // THIS IS THE MAGIC SAUCE.
         // This will essentially "capture" our event when our contract throws it.
         // If you're familiar with webhooks, it's very similar to that!
         connectedContract.on("NewEpicNFTMinted", (from, tokenId) => {

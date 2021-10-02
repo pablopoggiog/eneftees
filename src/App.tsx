@@ -25,7 +25,7 @@ const App = () => {
       >
         {!currentAccount ? "Connect to Wallet" : "Mint NFT"}
       </Button>
-      {!isMining && <Spinner />}
+      {isMining && <Spinner />}
       <Link href={OPENSEA_LINK} target="_blank" rel="noreferrer">
         🌊 View Collection on OpenSea
       </Link>
