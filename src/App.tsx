@@ -2,13 +2,10 @@ import {
   TWITTER_HANDLE,
   TWITTER_LINK,
   OPENSEA_LINK,
-  TOTAL_MINT_COUNT,
+  // TOTAL_MINT_COUNT,
 } from "src/constants";
 import { useContract } from "src/hooks/useContract";
 import twitterLogo from "src/assets/twitter-logo.svg";
-
-// I moved the contract address to the top for easy access.
-const CONTRACT_ADDRESS = "0x86E5064b3C441E446be2A97cec379de3EfF5514c";
 
 const App = () => {
   const { currentAccount, connectWallet, askContractToMintNft } = useContract();
