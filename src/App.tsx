@@ -1,4 +1,4 @@
-import { Button } from "src/components";
+import { Button, Spinner } from "src/components";
 import {
   OPENSEA_LINK,
   // TOTAL_MINT_COUNT,
@@ -8,7 +8,8 @@ import { useContract } from "src/hooks/useContract";
 import { Container, HeaderContainer, Title, Text, Link, Image } from "./styles";
 
 const App = () => {
-  const { currentAccount, connectWallet, askContractToMintNft } = useContract();
+  const { currentAccount, connectWallet, askContractToMintNft, isMining } =
+    useContract();
 
   return (
     <Container>
@@ -24,6 +25,7 @@ const App = () => {
       >
         {!currentAccount ? "Connect to Wallet" : "Mint NFT"}
       </Button>
+      {!isMining && <Spinner />}
       <Link href={OPENSEA_LINK} target="_blank" rel="noreferrer">
         🌊 View Collection on OpenSea
       </Link>

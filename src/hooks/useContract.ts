@@ -5,6 +5,7 @@ import { CONTRACT_ADDRESS } from "src/constants";
 
 export const useContract = () => {
   const [currentAccount, setCurrentAccount] = useState("");
+  const [isMining, setIsMining] = useState(false);
 
   const checkIfWalletIsConnected = useCallback(async () => {
     const { ethereum } = window;
@@ -117,12 +118,14 @@ export const useContract = () => {
         console.log("Going to pop wallet now to pay gas...");
         let nftTxn = await connectedContract.makeAnEpicNFT();
 
+        setIsMining(true);
         console.log("Mining...please wait.");
         await nftTxn.wait();
         console.log(nftTxn);
         console.log(
           `Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`
         );
+        setIsMining(false);
       } else {
         console.log("Ethereum object doesn't exist!");
       }
@@ -139,5 +142,6 @@ export const useContract = () => {
     currentAccount,
     connectWallet,
     askContractToMintNft,
+    isMining,
   };
 };
