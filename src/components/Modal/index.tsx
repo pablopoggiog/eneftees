@@ -1,6 +1,23 @@
 import { FunctionComponent } from "react";
-import { Container } from "./styles";
+import { Background, CloseButton, Container, Content } from "./styles";
 
-export const Modal: FunctionComponent = ({ children }) => {
-  return <Container>{children}</Container>;
+interface ModalProps {
+  content: string | JSX.Element;
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export const Modal: FunctionComponent<ModalProps> = ({
+  content,
+  isOpen,
+  onClose,
+}) => {
+  return (
+    <Background isOpen={isOpen}>
+      <Container>
+        <CloseButton onClick={onClose}>x</CloseButton>
+        <Content> {content}</Content>
+      </Container>
+    </Background>
+  );
 };

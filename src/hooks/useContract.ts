@@ -6,6 +6,7 @@ import { CONTRACT_ADDRESS } from "src/constants";
 export const useContract = () => {
   const [currentAccount, setCurrentAccount] = useState("");
   const [isMining, setIsMining] = useState(false);
+  const [newNFT, setNewNFT] = useState<number | null>(null);
 
   const interactWithContract = (
     callback: (contract: ethers.Contract) => void
@@ -62,19 +63,10 @@ export const useContract = () => {
     interactWithContract((contract) => {
       contract.on("NewEpicNFTMinted", (from, tokenId) => {
         console.log(from, tokenId.toNumber());
-        alert(`Hey there!
-      
-      We've minted your NFT and sent it to your wallet.
-      
-      It may be blank right now. It can take a max of 10 min to show up on OpenSea.
-      
-      Here's the link: 
-      
-      https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`);
+        setNewNFT(tokenId.toNumber());
       });
-
-      console.log("Setup event listener!");
     });
+    console.log("Setup event listener!");
   }, []);
 
   const checkIfWalletIsConnected = useCallback(async () => {
@@ -125,5 +117,6 @@ export const useContract = () => {
     connectWallet,
     askContractToMintNft,
     isMining,
+    newNFT,
   };
 };
