@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/eneftees/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/eneftees/static/js/main.6a0ef62e.chunk.js",
-    "main.js.map": "/eneftees/static/js/main.6a0ef62e.chunk.js.map",
+    "main.js": "/eneftees/static/js/main.791c8926.chunk.js",
+    "main.js.map": "/eneftees/static/js/main.791c8926.chunk.js.map",
     "runtime-main.js": "/eneftees/static/js/runtime-main.6ab4cad5.js",
     "runtime-main.js.map": "/eneftees/static/js/runtime-main.6ab4cad5.js.map",
-    "static/js/2.aa94fc90.chunk.js": "/eneftees/static/js/2.aa94fc90.chunk.js",
-    "static/js/2.aa94fc90.chunk.js.map": "/eneftees/static/js/2.aa94fc90.chunk.js.map",
+    "static/js/2.911c64b2.chunk.js": "/eneftees/static/js/2.911c64b2.chunk.js",
+    "static/js/2.911c64b2.chunk.js.map": "/eneftees/static/js/2.911c64b2.chunk.js.map",
     "static/js/3.e0a4e913.chunk.js": "/eneftees/static/js/3.e0a4e913.chunk.js",
     "static/js/3.e0a4e913.chunk.js.map": "/eneftees/static/js/3.e0a4e913.chunk.js.map",
     "index.html": "/eneftees/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/eneftees/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.aa94fc90.chunk.js.LICENSE.txt": "/eneftees/static/js/2.aa94fc90.chunk.js.LICENSE.txt",
+    "static/js/2.911c64b2.chunk.js.LICENSE.txt": "/eneftees/static/js/2.911c64b2.chunk.js.LICENSE.txt",
     "static/media/honest-work.ad914397.jpg": "/eneftees/static/media/honest-work.ad914397.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6ab4cad5.js",
-    "static/js/2.aa94fc90.chunk.js",
+    "static/js/2.911c64b2.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.6a0ef62e.chunk.js"
+    "static/js/main.791c8926.chunk.js"
   ]
 }
